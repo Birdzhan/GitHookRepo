@@ -1,0 +1,66 @@
+body{
+	background-image:url("../images/Adidas-Finale-14-15-Ball.jpg");
+	background-size: 90%;
+	background-repeat: no-repeat;
+}
+
+h1, h2 {
+	font-family: 'Vast Shadow', cursive;
+	font-weight: 400;
+	color: #333;
+}
+
+h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #333;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	color: #50FFEA;
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.navbar {
+	border-radius: 0;
+	background: -webkit-linear-gradient(left, #517848, #E77848); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #517848, #E77848); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #517848, #E77848); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #517848, #E77848); 
+}
+
+.navbar a {
+	color: #fff;
+	margin-top: 15px;
+	font-size: 1.2em;
+}
+
+.navbar a:hover {
+	border-radius: 5px;
+}
+
+.panel  {
+	background-color: rgba(10, 10, 0, 0.6);
+}
+.pick {
+	color:#FFEF99;
+}
+.jumbotron{
+	clear: both;
+	background-color: rgba(0, 60, 0, 0.6);
+}
+
+.panel-body button {
+	margin-top: 10px;
+}
+
+form {
+	margin-top: 10px;
+}

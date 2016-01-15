@@ -1,0 +1,189 @@
+ul, menu, dir, p {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0;
+}
+body {
+	background-image: url("../images/steel.png");
+	background-attachment: fixed; 
+}
+h1, h2, h3, h4, footer {
+	text-align: center;
+	color: #ffaa00;
+}
+nav {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 32px;
+	position: fixed;
+	top: 0;
+}
+nav ul {
+	text-align: right;
+}
+nav ul li {
+	display: inline-block; 
+}
+/*=======================child selector*/
+nav ul li a {
+	font-family: 'Josefin Slab', serif;
+	font-weight: 600;
+	display: block; 
+	text-decoration: none;
+	color: #ffaa00;
+	padding: 0.313em 0.625em 0.313em 0.625em;
+	vertical-align: text-bottom;
+}
+nav ul li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #ffaa00;
+}
+section a {
+	color: #fff;
+	text-decoration: none;
+}
+section a:hover {
+	color: #ffaa00;
+}
+/*=======================attribute selector a[target]*/
+a[href="http://en.wikipedia.org/wiki/Honda"] { 
+    text-decoration: underline;
+	color: #ffaa00;
+}
+a:visited {
+	color: yellow;
+}
+#home h1 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 2.5em;
+}
+#about h2, #products h2, #gallery h2 {
+	margin-top: 50px;
+	font-family: 'Josefin Slab', serif;
+	font-size: 2em;
+}
+section p, #products li {
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.5em;
+}                  
+#home, #about, #products {
+	width: 57.65765765765766%;
+	color: #fff;
+	margin: 0 auto;
+}                           
+ /*=======================adjacent sibling combinator p+p*/
+#about p + p {
+	text-indent: 1.5em;
+}
+/* Products */
+#products ul {
+	padding-left: 45.68768786877%;
+}
+/*=======================structural pseudo class selector :nth-of-type*/
+#products ul li:nth-of-type(odd) {
+	color: #ffaa00;
+}
+/*=======================:nth-child selector*/
+#products ul li:nth-child(2n+2) {
+	color: #cecfcd;
+}
+/* Gallery */
+#gallery {
+	width: 57.65765765765766%%;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 50px;
+}
+#gallery img {
+	max-width: 28.82882882882883%;
+	margin: 0 auto;
+	border: 0.313em solid #fff;
+}
+#gallery img:hover {
+	margin: 0 auto;
+	border: 0.313em solid #ffaa00;
+}
+/* Remove Social Media buttons from lightbox */
+.pp_social {
+	display: none;
+}
+/* Footer */
+footer {
+	font-weight: 600;
+	font-family: 'Josefin Slab', serif;
+	height: 32px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	bottom: 0;
+}
+footer p {
+	padding-top: 5px;
+}
+/*====================================== Media Queries*/
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+	body {
+		background: none;
+	}
+	h2 {
+		color: yellow;
+	}
+	footer {
+		background-color: grey;
+		color: #ffaa00;
+	}
+  }
+ 
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+		body {
+		background: none;
+		background-color: #303030;
+	}
+	h2 {
+		color: #ffaa00;
+	}
+	footer {
+		background-color: #fff;
+		color: #000;
+	}
+  }
+  
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+	body {
+		background: none;
+		background-color: #191919;
+	}
+
+	#products ul li:nth-of-type(odd) {
+		color: yellow;
+	}
+	footer {
+		background-color: grey;
+		color: yellow;
+	}
+  }
+ 
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+  
+  	body {
+		background: none;
+		background-color: #000;
+	}
+	h2 {
+		color: #fff;
+	}
+	footer {
+		background-color: #fff;
+		color: #000;
+	}
+  }

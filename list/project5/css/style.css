@@ -1,0 +1,285 @@
+body {									/* Starting Main Style Section */
+	width: 90%;
+	/* 90% leaving 10% for the margin on left and right*/
+	margin: 0 auto;
+	background-color: rgba(113,255,170,0.4);
+	font: normal 1.16em "Times New Roman", Arial, sans; 
+	/* font set to 1.16 em little larger than normal 18pt for smaller screens */
+	text-align: center;
+	background-image: url("../images/quorra.png");
+	background-repeat: repeat;
+    background-attachment: fixed;
+
+
+
+}
+section {
+	display: block;
+}
+.wrap {
+	margin: 0 auto;
+	display:inline-block;
+}
+h1 { /* CSS Validator finds error in this next paragraph, and I think is because of old browsers */
+	text-shadow: 2px 2px #777;
+	border-radius: 100px;
+	background: rgb(246,230,180); /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%, rgba(237,144,23,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(246,230,180,1)), color-stop(100%,rgba(237,144,23,1))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  rgba(246,230,180,1) 0%,rgba(237,144,23,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	width: 56%;
+	font: bold normal 2em/150% Arial, Helvetica, sans-serif;
+	margin: 1% auto;
+	padding: 1%;
+	border: 4px solid;
+	}
+/* Added text shadow, box shadow, rounded box corners and gradient */
+h2   {
+	box-shadow: 10px 10px 5px #777;
+	width: 45%;
+	font: italic 1.6em/120% Roboto, serif;
+	padding: 1%;
+	margin: 3% auto;
+	color: #fff;
+	border: 2px solid #0099dd;
+	background-color: rgba(0, 0, 0, 0.5);
+	}	
+h3	{
+	width: 55%;
+	font: bold 1.5em/110% Courier, monospace;
+	padding: 2%;
+	margin: 2% auto;
+	border: 2px solid #0099dd;
+	background-image:url('../images/Icon1.png');
+	background-repeat: no-repeat;
+	background-position: left ;
+}
+ h4,h5{
+	width: 18%;
+	font: bold 1.5em/110% Courier, monospace;
+	padding: 1%;
+	margin: 10% auto;
+	border: 2px solid #0099dd;
+	}
+h3,h4,h5 {
+	background-color: rgba(196, 255, 93, 0.5);
+}												/* Styling Main Links */					
+a:link {
+	color: blue;
+}
+a:visited {
+	color: black;	
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color:brown;
+}
+#navbar {
+	text-align: center;
+}
+li {
+	display: inline-block;
+	margin-right: 35px;
+}
+ul {							/* Unordered List Styling */
+	width:33%;
+	padding: 1%;
+	margin: 5px auto;
+	display: inline-block;
+	border: 1px solid green;
+	background-color: rgba(196, 255, 93, 0.5);
+	list-style-image:url('../images/Icon1.png');
+	/* added icon/ image in front of text */
+}
+ol {							/* Ordered List Styling */
+	padding: 0.5%;
+	margin: 0.15% auto;
+	display: inline-block;
+	border: 2px solid #890CE8;
+	background-color: #11ddda;
+}
+p {								/* Styling Paragraphs */
+	padding: 0.5%;
+	margin: 1% auto;
+	border: 1px dotted;
+	text-align: left;
+}
+a {								/* Styling Anchor */
+	border: 0px solid blue;
+	display: inline-block;
+}								/* Ending Main Style Section */						
+#positions {					/* Starting Navigation Section */
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 0;
+	text-align: center;
+	font-weight: bold;
+	width:15%
+}
+#pos {
+	margin-top: 310px
+}
+img {
+	border: 1px solid #000;
+	height: 440px;
+	width: 400px;
+	display: block;
+	/* added border around images, so when hovered it will change color without changing size */
+}
+img:hover {
+	border: 1px solid #fff;
+}
+#column1 {
+	float: left;
+	width:48%;
+	margin: 1%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #000;
+}
+#column1 p, #column2 p, #column3 p, #column4 p, #field p, #galTable p {
+	background-color: rgba(255,255,255,0.7);
+	display: block;
+}
+#column1 p a {
+	text-align: center;
+}
+#column2 {
+	float: right;
+	width:48%;
+	margin: 1%;
+	color: #000;
+}
+#column3 {
+	float: left;
+	width:31.3%;
+	margin: 1%;
+}
+#column4 {
+	float: right;
+	width:31.3%;
+	margin: 1%;
+}
+#field {
+	width: 31.3%;
+	overflow: auto;
+	margin: 1% auto;
+}
+figure {
+	display: block;
+	padding: 0;
+	max-width: 25%;
+	clear: right;
+	text-align: center;
+}
+#fig1 {
+	float: left;
+	margin: 0;
+}
+#fig3 {
+	float: right;
+	margin: 0;
+}
+#fig2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+figcaption {
+	border: 1px solid #000;
+	background-color: #fff;
+}
+#top {
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+}										/* Ending Navigation Section */
+#contactInfo {							/* Starting Layout Section */
+	max-width: 40%;
+	margin: 0 auto;
+}
+th, td {
+	padding: 7px 10px 10px 10px;
+	display: table-cell;
+}	
+table, th, td {							/* Top Table Layout */
+   border: 1px solid white;
+   background-color: green;
+   color: white;
+}	
+table {
+    width: 100%;
+	font-size: larger;	
+	text-align: center;
+}
+th {
+    height: 20px;	
+}
+tr:hover td {
+  background-color: #FFFAF0;
+  color: #000;
+}
+textarea {
+	width: 100px;
+	height: 10em;
+}
+fieldset{
+	max-width: 20%;
+	margin: 0 auto;
+}
+fieldset {
+	background-color: rgba(0,0,0,0.7);
+}
+legend, fieldset label, fieldset a {
+	color: #fff;
+}
+fieldset a:hover {
+	color: CornflowerBlue;
+}
+#fu {								/* Floating Text */
+	float: left;
+}
+#fp {
+	float: right;
+}
+#login {
+	border: 0;
+	background-color: #fff;
+	max-width:90%;
+	margin: 0 auto;
+}
+#login td {
+	border: 0;
+	background-color: #fff;
+	color: #000;
+}
+#galTable, #galTable td {
+	border: 0;
+	background-color: transparent;
+}
+#galTable td p {
+	text-align: center;
+	color: #000
+}
+#galTable tr:hover td {
+	color: #000;
+}
+#contact {
+	max-width: 25%;
+	margin: 0 auto;
+}
+#contact, #contact td {						/* Bottom Table Layout */
+	background-color: rgba(0,0,0,0.7);
+	border-collapse: collapse;
+	border: 0;
+}
+#contact tr:hover td {
+	color: #0099dd;
+}
+input:focus {
+	background-color: CornflowerBlue;
+}										/* Ending of Layout Section */
